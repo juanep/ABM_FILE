@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1558927543 source:c:\users\juan\desktop\juan\proyectos c\abm_file\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Libreria.h"
+	"Person.h"
+
+1558928761 source:c:\users\juan\desktop\juan\proyectos c\abm_file\person.c
+	<stdio.h>
+	<stdlib.h>
+	"Person.h"
+	"Libreria.h"
+
+1558928761 c:\users\juan\desktop\juan\proyectos c\abm_file\person.h
+
+1558927153 c:\users\juan\desktop\juan\proyectos c\abm_file\libreria.h
+
+1558928969 source:c:\users\juan\desktop\juan\proyectos c\abm_file\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Libreria.h"
+
