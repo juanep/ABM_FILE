@@ -136,30 +136,6 @@ int getName(char* pName, char* msg, char* msgError, int limit, int chanches){
     return retorno;
 }
 
-FILE* readBinaryFile(char* nombre, char* modo)
-{
-    FILE* pArch = NULL;
-    if((pArch = fopen(nombre, modo)) == NULL)
-    {
-        printf("\nEl archivo no puede ser abierto");
-        exit (1);
-    }
-    fclose(pArch);
-    return pArch;
-}
-
-FILE* readTextFile(char* nombre, char* modo)
-{
-    FILE* pArch = NULL;
-    if((pArch = fopen(nombre, modo)) == NULL)
-    {
-        printf("\nEl archivo no puede ser abierto");
-        exit (1);
-    }
-    fclose(pArch);
-    return pArch;
-}
-
 FILE* binFileImpl(char* nombre, char* modo)
 {
     FILE* pArch = NULL;

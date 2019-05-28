@@ -68,20 +68,6 @@ void menuService(int* option);
  * \param
  * \return
  */
-FILE* readBinaryFile(char* nombre, char* modo);
-
-/** \brief
- * \param
- * \param
- * \return
- */
-FILE* readTextFile(char* nombre, char* modo);
-
-/** \brief
- * \param
- * \param
- * \return
- */
 FILE* binFileImpl(char* nombre, char* modo);
 
 /** \brief

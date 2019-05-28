@@ -12,6 +12,14 @@ typedef struct{
 /** \brief
  * \param
  * \param
+ * \param
+ * \return
+ */
+FILE* readFile(char* nombre, char* modo, int tam);
+
+/** \brief
+ * \param
+ * \param
  * \return
  */
 int* addBinPerson(char* nombre, char* modo);

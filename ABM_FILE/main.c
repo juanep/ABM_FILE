@@ -13,10 +13,10 @@ int main()
 
     do
     {
-        pBinArch = readBinaryFile(BIN, "r+b");
+        pBinArch = readFile(BIN, "rb", 1);
         switch(menu())
         {
-            case 1:
+            case 1: addBinPerson(BIN, "wb");
                 break;
             case 2:
                 break;

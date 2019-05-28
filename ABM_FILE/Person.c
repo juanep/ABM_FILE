@@ -3,6 +3,35 @@
 #include "Person.h"
 #include "Libreria.h"
 
+FILE* readFile(char* nombre, char* modo, int tam)
+{
+    FILE* pArch = NULL;
+    int* count = (int*) malloc(sizeof(int));
+    if((pArch = fopen(nombre, modo)) == NULL)
+    {
+        printf("\nEl archivo no puede ser abierto o es inexistente");
+        exit (1);
+    }
+    else
+    {
+        *count = fread(nombre, sizeof(sPerson), tam, pArch);
+        if(*count != 0)
+        {
+            if(*count == tam)
+            {
+                printf("\nLectura de archivo completa");
+            }
+            else
+            {
+                printf("\nLectura de archivo incompleta o fin del archivo");
+            }
+        }
+    }
+    free(count);
+    fclose(pArch);
+    return pArch;
+}
+
 int* addBinPerson(char* nombre, char* modo)
 {
     int* flag = (int*) malloc(sizeof(int));
